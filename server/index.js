@@ -8,6 +8,10 @@ const app=express();
 
 const userRoutes=require('./routes/User');
 const CourseRoutes=require('./routes/Course');
+const paymentRoutes=require('./routes/Payments');
+const profileRoutes=require('./routes/Profile');
+
+
 
 
 
@@ -52,6 +56,10 @@ cloudnairyconnect();
 
 app.use('/api/v1/auth',userRoutes);
 app.use('/api/v1/course',CourseRoutes);
+app.use('/api/v1/payment',paymentRoutes);
+app.use('/api/v1/profile',profileRoutes);
+
+
 
 
 

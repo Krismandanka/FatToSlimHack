@@ -75,7 +75,6 @@ const ProductsPage = () => {
     const fetchData = async () => {
       try {
 
-        console.log("fffffffffff")
 
         
 
@@ -87,8 +86,6 @@ const ProductsPage = () => {
           // Fetch data
           const results = await getAllProducts(dispatch);
           
-
-
   
           // Use the state updater function to ensure the latest state
           setProdu((prevProdu) => results);
@@ -153,18 +150,18 @@ const ProductsPage = () => {
               ))}
             </ul>
     </div>
-    <div className='col-span-9 col-start-4 flex flex-col  '>
+    <div className='col-span-9 col-start-4 flex flex-col   '>
       
         {/* <SwiperBox /> */}
-        <Slider />
+        <Slider className="" />
         
         
-      <div className='flex w-[100%] items-center justify-around ' >
+      <div className='flex w-[100%] items-center justify-around m-14' >
         <div className='w-[55%] border-r-4  border-l-4 p-4 '>
           <main className=" flex flex-row h-screen">
 
            
-            <div className=" w-[100%] bg-gray-50 max-h-screen overflow-y-auto">
+            <div className=" w-[100%] bg-gray-50 max-h-screen overflow-y-auto m-4">
               <ProductItems inProdu={inProdu} />
             </div>
 

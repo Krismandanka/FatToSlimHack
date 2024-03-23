@@ -6,6 +6,7 @@ import Header from './Components/common/Header';
 import NavBar from './Components/common/Navbar';
 import Login from './Pages/Login';
 import ProductsPage from './Components/Core/products/ProductPage';
+import EnrolledCourses from './Components/Core/Dashboard/EnrolledCourses';
 function App() {
   const user = localStorage.getItem("user")
     ? JSON.parse(localStorage.getItem("user"))
@@ -18,8 +19,11 @@ function App() {
               <Route path="/login" element={<Login />}/>
               {/* <Route path="/products" element={<ProductsPage />} /> */}
               <Route path="/healthPlan" element={<ProductsPage />}  />
-
-
+              
+              <Route
+                path="/dashboard/enrolled-courses"
+                element={<EnrolledCourses />}
+              />
 
 
             </Routes>

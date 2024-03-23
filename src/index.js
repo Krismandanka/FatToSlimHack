@@ -9,6 +9,7 @@ import customTheme from "./assets/themes/themes";
 import { Provider } from "react-redux";
 import rootReducer from './reducer';
 import { configureStore } from "@reduxjs/toolkit";
+import { Toaster } from "react-hot-toast";
 
 
 const store = configureStore({
@@ -23,6 +24,8 @@ root.render(
     <ChakraProvider theme={customTheme} >
 
       <App />
+      <Toaster />
+
       </ChakraProvider>
 
     </BrowserRouter>

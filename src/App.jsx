@@ -5,6 +5,7 @@ import Home from "./Components/common/Home"
 import Header from './Components/common/Header';
 import NavBar from './Components/common/Navbar';
 import Login from './Pages/Login';
+import ProductsPage from './Components/Core/products/ProductPage';
 function App() {
   const user = localStorage.getItem("user")
     ? JSON.parse(localStorage.getItem("user"))
@@ -16,6 +17,7 @@ function App() {
               <Route path="/" element={<Home />}/>
               <Route path="/login" element={<Login />}/>
               {/* <Route path="/products" element={<ProductsPage />} /> */}
+              <Route path="/healthPlan" element={<ProductsPage />}  />
 
 
 

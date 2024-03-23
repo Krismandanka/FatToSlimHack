@@ -14,6 +14,7 @@ exports.createCourse = async (req, res) => {
 	try {
 		// Get user ID from request object
 		const userId = req.user.id;
+		// console.log("hhhhhhhhhh")
 
 		// Get all required fields from request body
 		let {
@@ -67,6 +68,8 @@ exports.createCourse = async (req, res) => {
 			process.env.FOLDER_NAME
 		);
 		console.log(thumbnailImage);
+		// console.log("hhhhhhhhhh")
+
 		// Create a new course with the given details
 		const newCourse = await Course.create({
 			courseName,
@@ -92,14 +95,15 @@ exports.createCourse = async (req, res) => {
 			},
 			{ new: true }
 		);
+		console.log("hhhhhhhhlllllllllllllh")
 		// Add the new course to the Categories
 		
 		// Return the new course and a success message
 		res.status(200).json({
 			success: true,
 			data: newCourse,
-			message: "Course Created Successfully",
-			updC
+			message: "Course Created Successfully"
+			
 		});
 	} catch (error) {
 		// Handle any errors that occur during the creation of the course
@@ -118,6 +122,7 @@ exports.getAllCourses = async (req, res) => {
 			{},
 			{
 				courseName: true,
+				courseDescription:true,
 				price: true,
 				thumbnail: true,
 				instructor: true,

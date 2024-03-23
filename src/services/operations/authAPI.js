@@ -17,6 +17,7 @@ const {
 
 export function sendOtp(email, navigate) {
   return async (dispatch) => {
+    console.log("its mmeee")
     const toastId = toast.loading("Loading...")
     dispatch(setLoading(true))
     try {
@@ -89,15 +90,20 @@ export function signUp(
 }
 
 export function login(email, password, navigate) {
+    console.log("pppppppppppppp")
   return async (dispatch) => {
+    // console.log("its mmm")
     const toastId = toast.loading("Loading...")
     dispatch(setLoading(true))
+    // console.log("its mmm")
+
     try {
+
       const response = await apiConnector("POST", LOGIN_API, {
         email,
         password,
       })
-
+      console.log("ppp")
       console.log("LOGIN API RESPONSE............", response)
 
       if (!response.data.success) {

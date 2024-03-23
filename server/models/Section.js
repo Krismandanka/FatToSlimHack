@@ -2,11 +2,16 @@ const mongoose = require("mongoose");
 
 // Define the Section schema
 const sectionSchema = new mongoose.Schema({
-	
-	title: { type: String },
-	timeDuration: { type: String },
-	description: { type: String },
-	videoUrl: { type: String },
+	sectionName: {
+		type: String,
+	},
+	subSection: [
+		{
+			type: mongoose.Schema.Types.ObjectId,
+			required: true,
+			ref: "SubSection",
+		},
+	],
 });
 
 // Export the Section model

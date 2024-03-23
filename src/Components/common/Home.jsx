@@ -20,6 +20,9 @@ export default function Hero({
   ...rest
 }) {
   return (
+    <div className="flex flex-col w-full">
+
+
     <Flex
       align="center"
       justify={{ base: "center", md: "space-around", xl: "space-between" }}
@@ -55,9 +58,9 @@ export default function Hero({
         >
           {subtitle}
         </Heading>
-        <Link to={ctaLink}>
+        <Link to="/healthPlan">
           <Button borderRadius="8px" py="4" px="4" lineHeight="1" size="md">
-            {ctaText}
+            Create Your Plan
           </Button>
         </Link>
         <Text fontSize="xs" mt={2} color="primary.800" opacity="0.6">
@@ -67,7 +70,13 @@ export default function Hero({
       <Box w={{ base: "80%", sm: "60%", md: "50%" }} mb={{ base: 12, md: 0 }}>
         <Image src={image} size="100%" rounded="1rem" shadow="2xl" />
       </Box>
+      
+
     </Flex>
+
+    
+
+    </div>
   );
 }
 

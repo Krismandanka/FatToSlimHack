@@ -7,6 +7,8 @@ const express=require('express');
 const app=express();
 
 const userRoutes=require('./routes/User');
+const CourseRoutes=require('./routes/Course');
+
 
 
 const database=require('./config/database');
@@ -49,6 +51,8 @@ cloudnairyconnect();
 
 
 app.use('/api/v1/auth',userRoutes);
+app.use('/api/v1/course',CourseRoutes);
+
 
 
 app.get("/",(req, res)=>{

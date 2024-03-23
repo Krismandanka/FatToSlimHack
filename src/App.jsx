@@ -7,6 +7,9 @@ import NavBar from './Components/common/Navbar';
 import Login from './Pages/Login';
 import ProductsPage from './Components/Core/products/ProductPage';
 import EnrolledCourses from './Components/Core/Dashboard/EnrolledCourses';
+// import AddCourse from './Components/Core/Dashboard/AddCourse/index';
+
+
 function App() {
   const user = localStorage.getItem("user")
     ? JSON.parse(localStorage.getItem("user"))
@@ -24,6 +27,7 @@ function App() {
                 path="/dashboard/enrolled-courses"
                 element={<EnrolledCourses />}
               />
+                      {/* <Route path="dashboard/add-course" element={<AddCourse />} /> */}
 
 
             </Routes>

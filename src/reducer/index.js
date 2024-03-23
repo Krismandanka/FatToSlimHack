@@ -5,7 +5,7 @@ import authReduces from "../slices/authSlice"
 import profileReducer from "../slices/profileSlice";
 import cartReducer from "../slices/cartSlice";
 import loadingBarSlice from "../slices/loadingBarSlice";
-// import courseReducer from '../slices/courseSlice'
+import courseReducer from '../slices/courseSlice'
 // import viewCourseReducer from "../slices/viewCourseSlice"
 
 
@@ -14,7 +14,7 @@ const rootReducer = combineReducers({
     profile:profileReducer,
     cart:cartReducer,
     loadingBar:loadingBarSlice,
-    // course:courseReducer,
+    course:courseReducer,
     // viewCourse:viewCourseReducer
 
 

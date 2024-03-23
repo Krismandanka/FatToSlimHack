@@ -10,6 +10,11 @@ import {
   Text,
   Link
 } from "@chakra-ui/react";
+// import Link from "@babel/core"
+import logo from "../../assets/Logo/logo-removebg.png"
+
+import { Link as Liik, matchPath } from 'react-router-dom'
+
 
 export default function Hero({
   title,
@@ -44,6 +49,7 @@ export default function Hero({
           fontWeight="bold"
           color="primary.800"
           textAlign={["center", "center", "left", "left"]}
+          className="font-epilogue"
         >
           {title}
         </Heading>
@@ -60,12 +66,14 @@ export default function Hero({
         </Heading>
         <Link to="/healthPlan">
           <Button borderRadius="8px" py="4" px="4" lineHeight="1" size="md">
-            Create Your Plan
+            <Liik to="login">
+              Create your account now
+
+            </Liik>
+            
           </Button>
         </Link>
-        <Text fontSize="xs" mt={2} color="primary.800" opacity="0.6">
-          No credit card required.
-        </Text>
+        
       </Stack>
       <Box w={{ base: "80%", sm: "60%", md: "50%" }} mb={{ base: 12, md: 0 }}>
         <Image src={image} size="100%" rounded="1rem" shadow="2xl" />
@@ -73,6 +81,17 @@ export default function Hero({
       
 
     </Flex>
+    {/* <!-- component --> */}
+{/* <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
+  <div class="mb-2 sm:mb-0">
+    <a href="#" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark">Home</a>
+  </div>
+  <div>
+    <a href="#" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">One</a>
+    <a href="#" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Two</a>
+    <a href="#" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Three</a>
+  </div>
+</nav> */}
 
 
     {/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */}
@@ -102,29 +121,30 @@ export default function Hero({
       <div>
         <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
           <p className="text-base font-semibold leading-7 text-yellow-400">wisdom values</p>
-          <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Peaceful minds</h1>
+          <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Shikha Aggarwal</h1>
           <div className="max-w-xl">
-            <p className="mt-6">You won't ever have a peaceful mind unless you have a peace ful life and equal times you have a time with your religion then time for fun then time for work and study.</p>
-            <p className="mt-8">You want to have a peaceful day try ignoring problems that are blamed on you but you are sure you didn't do the mistake.</p>
-            <p className="mt-8">Try dividing your life days into equal times and do every thing on it's time.</p>
+            <p className="mt-6">
+Fat To Slim Shikha Aggarwal Sharma is all about ‘Eat, Sleep, No Exercise, Loose. Shikha Aggarwal Sharma is a Celebrity Dietitian and Nutritionist , She specializes in Indian based diet, Her diet is more about Indian food and not at all about Brown Bread, Brown Rice or those fancy Salads.</p>
+            <p className="mt-8">She is Running her Venture in the Name of “Fat to Slim”. In a short period, she has 30000+ clients across India & abroad and that she has achieved only by the word of mouth from her existing clients. </p>
+            {/* <p className="mt-8">She uses indian home based diet to fix different health issues as well.In fact she gives so much to eat that sometimes her clients ask her to skip meals from the diet program.</p> */}
           </div>
         </div>
         <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
-          <div>Name
-            <dt className="text-sm font-semibold leading-6 text-gray-600">Founded</dt>
-            <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">end of 2023</dd>
+          <div>Founder
+            <dt className="text-sm font-semibold leading-6 text-gray-600">Name</dt>
+            <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">Shikha Agarwal</dd>
           </div>
           <div>
             <dt className="text-sm font-semibold leading-6 text-gray-600">Employees</dt>
             <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">uncounted</dd>
           </div>
           <div>
-            <dt className="text-sm font-semibold leading-6 text-gray-600">Countries</dt>
-            <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">2</dd>
+            <dt className="text-sm font-semibold leading-6 text-gray-600">Courses</dt>
+            <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">7</dd>
           </div>
           <div>
-            <dt className="text-sm font-semibold leading-6 text-gray-600">Raised</dt>
-            <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">$1.5K</dd>
+            <dt className="text-sm font-semibold leading-6 text-gray-600">Customers</dt>
+            <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">4003</dd>
           </div>
         </dl>
         <div class="mt-10 flex">
@@ -139,7 +159,7 @@ export default function Hero({
 
     {/* reviewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */}
 
-<section class="bg-gray-2 dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20 p-10">
+<section class="bg-gray-2 dark:bg-dark pt-20  lg:pt-[120px] lg:pb-20 p-10">
    <div class="container mx-auto">
       <div class="flex flex-wrap -mx-4">
          <div class="w-full px-4 md:w-1/2 xl:w-1/3">
@@ -212,6 +232,7 @@ export default function Hero({
                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3"
                >
                <img
+               
                   src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
                   alt="image"
                   class="w-full"
@@ -252,7 +273,7 @@ export default function Hero({
   <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
       <div class="space-y-8">
-        <img class="h-20" src="https://aaah0mnbncqtinas.public.blob.vercel-storage.com/FX5ATkass4-no-background-VmcZHSX7xE4ng29ATNphGUdb388fxH.png" alt="Company name" />
+        <img class="h-20" src={logo} alt="Company name" />
         <p class="text-sm leading-6 text-gray-600">Making football look better to the world and a more respecful game.</p>
         <div class="flex space-x-6">
           <a href="#" class="text-gray-400 hover:text-gray-500">
@@ -386,9 +407,9 @@ Hero.propTypes = {
 };
 
 Hero.defaultProps = {
-  title: "React landing page with Chakra UI",
+  title: "Fat to slim",
   subtitle:
-    "This is the subheader section where you describe the basic benefits of your product",
+    "Watch Our Latest & Most Popular Videos With The Unique Concept",
   image: "https://source.unsplash.com/collection/404339/800x600",
   ctaText: "Create your account now",
   ctaLink: "/signup"

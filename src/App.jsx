@@ -8,7 +8,7 @@ import Login from './Pages/Login';
 import ProductsPage from './Components/Core/products/ProductPage';
 import EnrolledCourses from './Components/Core/Dashboard/EnrolledCourses';
 // import AddCourse from './Components/Core/Dashboard/AddCourse/index';
-
+import CourseDetails from './Pages/CourseDetails';
 
 function App() {
   const user = localStorage.getItem("user")
@@ -28,6 +28,7 @@ function App() {
                 element={<EnrolledCourses />}
               />
                       {/* <Route path="dashboard/add-course" element={<AddCourse />} /> */}
+                      <Route path="/courses/:courseId" element={<CourseDetails />} />
 
 
             </Routes>

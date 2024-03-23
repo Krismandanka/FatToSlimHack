@@ -6,19 +6,19 @@ import { useDispatch } from "react-redux"
 import {  useNavigate } from "react-router-dom"
 
 import { login } from "../../services/operations/authAPI"
-// import { logout } from "../../services/operations/authAPI";
-
+import { logout } from "../../services/operations/authAPI";
+import logo from "../../assets/Logo/logo-removebg.png"
 
 const Header = () => {
   return (
     <>
       <header
-    class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+    class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg ">
     <div class="px-4">
         <div class="flex items-center justify-between">
             <div class="flex shrink-0">
                 <a aria-current="page" class="flex items-center" href="/">
-                    <img class="h-7 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="" />
+                    <img class="h-7 w-auto" src={logo} alt="" />
                     <p class="sr-only">Website Title</p>
                 </a>
             </div>

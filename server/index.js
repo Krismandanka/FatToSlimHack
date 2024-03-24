@@ -11,7 +11,7 @@ const CourseRoutes=require('./routes/Course');
 const paymentRoutes=require('./routes/Payments');
 const profileRoutes=require('./routes/Profile');
 
-
+// const userRoute = require("./routes/userRoute");
 
 
 
@@ -58,6 +58,7 @@ app.use('/api/v1/auth',userRoutes);
 app.use('/api/v1/course',CourseRoutes);
 app.use('/api/v1/payment',paymentRoutes);
 app.use('/api/v1/profile',profileRoutes);
+// app.use('/api/v1/whatsapp',userRoute);
 
 
 

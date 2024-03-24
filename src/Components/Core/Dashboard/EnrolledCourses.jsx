@@ -67,7 +67,7 @@ const EnrolledCourses = () => {
                     {
                         enrolledCourses.map((course,index)=> (
                             <div key={index} onClick={()=>{
-                                navigate(`/view-course/${course._id}/section/${course.courseContent[0]._id}/sub-section/${course.courseContent[0].subSection[0]}`)}}
+                                navigate(`/courses/${course._id}`)}}
                                  className='flex items-center border border-richblack-700 rounded-none'>
                                 <div className='flex w-[45%] cursor-pointer items-center gap-4 px-5 py-3'>
                                     <img className='h-14 w-14 rounded-lg object-cover'  src={course.thumbnail}/>
@@ -118,3 +118,92 @@ const EnrolledCourses = () => {
 }
 
 export default EnrolledCourses
+
+// function amj(){
+//     return (
+//         <div>
+//             {
+//                         enrolledCourses.map((course,index)=> (
+//                             <div key={index} onClick={()=>{
+//                                 navigate(`/courses/${course._id}`)}}
+//                                  className='flex items-center border border-richblack-700 rounded-none'>
+//                                 <div className='flex w-[45%] cursor-pointer items-center gap-4 px-5 py-3'>
+//                                     <img className='h-14 w-14 rounded-lg object-cover'  src={course.thumbnail}/>
+//                                     <div className='flex max-w-xs flex-col gap-2'>
+//                                         <p className='font-semibold'>{course.courseName}</p>
+//                                         <p className='text-xs text-richblack-300 hidden md:block'>{
+//                                             //description with max 50 characters
+//                                             course.courseDescription.length > 50 ? course.courseDescription.slice(0,50) + '....' : course.courseDescription
+//                                         }</p>
+//                                     </div>
+//                                 </div>
+
+//                                 <div className='w-1/4 px-2 py-3'>
+//                                     {course?.totalDuration}
+//                                 </div>
+
+//                                 <div className='flex w-1/5 flex-col gap-2 px- py-3'>
+//                                     {
+//                                         progressData?.map((progress,index)=> {
+//                                             //show 0 progress if no progress data is available
+//                                             if(progress?.courseID === course?._id) {
+//                                                 return (
+//                                                     <div key={index}>
+//                                                         <p>Completed: {progress?.completedVideos?.length} / {totalNoOfLectures(course)}</p>
+//                                                         <ProgressBar
+//                                                             completed={progress?.completedVideos?.length/totalNoOfLectures(course)*100}
+//                                                             total={progress?.total}
+//                                                             height='8px'
+//                                                             isLabelVisible={false}
+//                                                             />
+//                                                     </div>
+//                                                 )
+//                                             }
+//                                             return null;
+//                                         }
+//                                         )
+//                                     }
+//                                     </div> 
+//                             </div>
+//                         ))
+//                     }
+            
+
+//         <div class="w-full px-4 md:w-1/2 xl:w-1/3" key={index} onClick={()=>{
+//                                 navigate(`/courses/${course._id}`)}}>
+//             <div
+//                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3"
+//                >
+//                <img
+//                   src={course.thumbnail}
+//                   alt="image"
+//                   class="w-full"
+//                   />
+//                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+//                   <h3>
+//                      <a
+//                         href="javascript:void(0)"
+//                         class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
+//                         >
+//                      {course.courseName}
+//                      </a>
+//                   </h3>
+//                   <p class="text-base leading-relaxed text-body-color mb-7">
+//                   {
+//                                             //description with max 50 characters
+//                                             course.courseDescription.length > 50 ? course.courseDescription.slice(0,50) + '....' : course.courseDescription
+//                                         }
+//                   </p>
+//                   <a
+//                      href="javascript:void(0)"
+//                      class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6"
+//                      >
+//                   View Details
+//                   </a>
+//                </div>
+//             </div>
+//          </div>
+//         </div>
+
+//     )
+// }

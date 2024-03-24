@@ -67,7 +67,7 @@ export default function Hero({
         <Link to="/healthPlan">
           <Button borderRadius="8px" py="4" px="4" lineHeight="1" size="md">
             <Liik to="login">
-              Create your account now
+              Create Your Account Now
 
             </Liik>
             
@@ -167,11 +167,11 @@ Fat To Slim Shikha Aggarwal Sharma is all about ‘Eat, Sleep, No Exercise, Loos
                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3"
                >
                <img
-                  src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-01.jpg"
+                  src="https://fattoslimshikhaaggarwalsharma.com/wp-content/uploads/2022/09/assorted-various-indian-food-dark-rustic-background-traditional-dishes-chicken-tikka-masala-palak-paneer-saffron-rice-lentil-163316040.jpg"
                   alt="image"
                   class="w-full"
                   />
-                  <h1 className="text-center mt-4 font-bold font-epilogue">Name</h1>
+                  <h1 className="text-center mt-4 font-bold font-epilogue">Weight Loss</h1>
                <div class="text-center">
                   <h3>
                      <a
@@ -184,15 +184,17 @@ Fat To Slim Shikha Aggarwal Sharma is all about ‘Eat, Sleep, No Exercise, Loos
                   <p
                      class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-7"
                      >
-                     Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                     elit. Lorem consectetur adipiscing elit.
+                   2 Meetings
+Customized to your needs
+Lose excess weight
+1 Follow up
                   </p>
-                  <a
+                  {/* <a
                      href="javascript:void(0)"
                      class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6"
                      >
                   View Details
-                  </a>
+                  </a> */}
                </div>
             </div>
          </div>
@@ -201,11 +203,13 @@ Fat To Slim Shikha Aggarwal Sharma is all about ‘Eat, Sleep, No Exercise, Loos
                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3"
                >
                <img
-                  src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-02.jpg"
+                  src="https://fattoslimshikhaaggarwalsharma.com/wp-content/uploads/2022/09/755-7556367_garam-masala-hd-png-download.png"
                   alt="image"
                   class="w-full"
                   />
-               <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h1 className="text-center mt-4 font-bold font-epilogue">Travel Diet</h1>
+
+               <div class="text-center">
                   <h3>
                      <a
                         href="javascript:void(0)"
@@ -215,15 +219,12 @@ Fat To Slim Shikha Aggarwal Sharma is all about ‘Eat, Sleep, No Exercise, Loos
                      </a>
                   </h3>
                   <p class="text-base leading-relaxed text-body-color mb-7">
-                     Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                     elit. Lorem consectetur adipiscing elit.
+                  Special Diet
+Excercise Yoga Plan
+Weekly meetings
+Breast Feeding Session
                   </p>
-                  <a
-                     href="javascript:void(0)"
-                     class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6"
-                     >
-                  View Details
-                  </a>
+                  
                </div>
             </div>
          </div>
@@ -232,34 +233,41 @@ Fat To Slim Shikha Aggarwal Sharma is all about ‘Eat, Sleep, No Exercise, Loos
                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3"
                >
                <img
-               
-                  src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                  src="https://fattoslimshikhaaggarwalsharma.com/wp-content/uploads/2022/09/assorted-various-indian-food-dark-rustic-background-traditional-dishes-chicken-tikka-masala-palak-paneer-saffron-rice-lentil-163316040.jpg"
                   alt="image"
                   class="w-full"
                   />
-               <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                  <h1 className="text-center mt-4 font-bold font-epilogue">Weight Loss</h1>
+               <div class="text-center">
                   <h3>
                      <a
                         href="javascript:void(0)"
                         class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
                         >
-                     Creative Card Component designs graphic elements
+                     50+ Best creative website themes & templates
                      </a>
                   </h3>
-                  <p class="text-base leading-relaxed text-body-color mb-7">
-                     Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                     elit. Lorem consectetur adipiscing elit.
+                  <p
+                     class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-7"
+                     >
+                   2 Meetings
+Customized to your needs
+Lose excess weight
+1 Follow up
                   </p>
-                  <a
+                  {/* <a
                      href="javascript:void(0)"
                      class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6"
                      >
                   View Details
-                  </a>
+                  </a> */}
                </div>
             </div>
          </div>
-      </div>
+         
+          
+         </div>
+      
    </div>
 </section>
 
